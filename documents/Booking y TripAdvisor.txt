@@ -1,0 +1,2 @@
+                    <li><a href=""><img src="assets/booking.png" alt="Booking"><p>Buscanos en Booking</p></a></li>
+                    <li><a href=""><img src="assets/tripadvisor.png" alt="TripAdvisor"><p>Buscanos en TripAdvisor</p></a></li>

@@ -1,0 +1,511 @@
+body{
+    background-color: $fondoBody;
+    .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        div {
+          box-sizing: border-box;
+          display: block;
+          position: absolute;
+          width: 64px;
+          height: 64px;
+          margin: 8px;
+          border: 8px solid black;
+          border-radius: 50%;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          border-color: white transparent transparent transparent;
+          &:nth-child(1) {
+            animation-delay: -0.45s;
+          }
+          &:nth-child(2) {
+            animation-delay: -0.3s;
+          }
+          &:nth-child(3) {
+            animation-delay: -0.15s;
+          }
+        }
+        img {
+            width: 30px;
+          }
+      }
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .loader{
+        background: #000000;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        clip-path: circle(150% at 100% 100%);
+        transition: clip-path 1s ease-in-out;
+      }
+      .loader-hide{
+        clip-path: circle(0% at 100% 100%);
+      }
+
+    main{
+        padding: 0 !important;
+        overflow: hidden;
+    }
+    .home{
+        position: relative;
+        nav{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+        .fondo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow:hidden;
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+        .capa{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: $fondoNab;
+        }
+        .slogan{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            span{
+                font-family: Mahalo;
+                font-style: italic;
+                font-size: 10em;
+                color: $textWhite;
+                padding: 0 30px;
+    
+            }
+            .entranceSlogan{
+                -webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                        animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+        }
+    }
+    .floatHome{
+        position:fixed;
+        width:30px;
+        height:30px;
+        bottom: 70px;
+        right: 25px;
+        background-color: transparent;
+        border-radius:10px;
+        text-align:center;
+        z-index:100;
+        i{
+            color: $fondoBody;
+            position: absolute;
+            transform: translate(-50%, -10%);
+            font-size: 25px;
+            animation-name: anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        p{
+            position: absolute;
+            transform: translate(-120%, 10%);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+            visibility: hidden;
+            height:32px;
+            padding:0 14px;
+            border:none;
+            border-radius:16px;
+            background:#fff;
+            color:rgb(0 0 0/80%);
+            line-height:31px;
+            white-space:nowrap;
+            filter:drop-shadow(0 1px 4px rgb(0 0 0 / 40%));
+        }
+        p:after{
+            content:"";
+            display:block;
+            position:absolute;
+            top:10px;
+            right:-6px;
+            border:8px solid transparent;
+            border-width:6px 0 6px 8px;
+            border-left-color:#fff
+        }
+        &:hover {
+            p{
+                transition: all 800ms ease-out;
+                visibility: visible;
+            }
+        }
+    }
+    .float{
+        position:fixed;
+        width:40px;
+        height:40px;
+        bottom:20px;
+        right:20px;
+        background-color:$fondoGreen;
+        color:$textWhite;
+        border-radius:50px;
+        text-align:center;
+        z-index:100;
+        -webkit-animation: slide-in-blurred-br 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation: slide-in-blurred-br 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation-delay: 1s;
+        i{
+            position: absolute;
+            transform: translate(-50%, -22%);
+            font-size: 25px;
+        }
+        p{
+            position: absolute;
+            transform: translate(-105%, 20%);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+            visibility: hidden;
+            height:32px;
+            padding:0 14px;
+            border:none;
+            border-radius:16px;
+            background:#fff;
+            color:rgb(0 0 0/80%);
+            line-height:31px;
+            white-space:nowrap;
+            filter:drop-shadow(0 1px 4px rgb(0 0 0 / 40%));
+        }
+        p:after{
+            content:"";
+            display:block;
+            position:absolute;
+            top:10px;
+            right:-6px;
+            border:8px solid transparent;
+            border-width:6px 0 6px 8px;
+            border-left-color:#fff
+        }
+        &:hover {
+            background:#128c7e;
+            transition-duration:1.5s;
+            p{
+                transition: all 800ms ease-out;
+                visibility: visible;
+            }
+        }
+        .my-float{
+            margin-top:13px;
+        }
+    }
+    .bienvenido, .cabanas, .reserva, .zonaTuristica, .reviews, .contacto{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        .titulo{
+            font-family: Mahalo;
+            text-align: center;
+            font-size: 7em;
+            margin-top: 30px;
+        }
+        .parrafo{
+            text-align: center;
+            margin-top: 20px;
+            padding: 5px 150px;
+            font-weight: bold;
+        }
+    }
+    .zonaTuristica{
+        .parrafo{
+            margin-bottom: 25px;
+        }
+        .videos{
+            display: flex;
+            gap: 1em;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 90%;
+            iframe{
+                width: 100%;
+                height: 350px;
+            }
+        }
+        h3{
+            font-family: Mahalo;
+            text-align: center;
+            font-size: 4em;
+            margin-top: 30px;
+        }
+        .postales{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            padding: 0 45px;
+            margin: 40px 0px 0px 0px;
+            width: 100%;
+            .postal{
+                width: 370px;
+                margin: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 500ms ease-out;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: all 500ms ease-out;
+                    }
+                }
+            }
+        }
+        .modal{
+            --bs-modal-width: 900px;
+            .modalPostales{
+                .carousel{
+                    position: relative;
+                }
+                .btn-close{
+                    position: absolute;
+                    top: 7%;
+                    right: 4%;
+                    z-index: 2;
+                    background: transparent url(../../assets/cerrar.png) center/1em auto no-repeat;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .cabanas{
+        .parrafo{
+            margin-bottom: 10px;
+        }
+        .galeriaCabanas{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            padding: 0 45px;
+            margin: 0px;
+            margin-top: 20px;
+            width: 100%;
+            .fotoCabanas{
+                width: 370px;
+                margin: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 100%;
+                height: auto;
+                transition: all 500ms ease-out;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border: 4px solid #fff;
+                }
+            } 
+        }
+        h3{
+            font-family: Mahalo;
+            text-align: center;
+            font-size: 4em;
+            margin-top: 30px;
+        }
+        .iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        margin: 30px 0px 0px 0px;
+        width: 100%;
+        gap: 20px;
+            .icono{
+                padding: 0 10px;
+                width: auto;
+                float: left;
+                position: relative;
+                width: 87px;
+                margin-top: 20px;
+                img{
+                    width: 50px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    max-width: 100%;
+                    height: auto;
+                    transition: all 500ms ease-out;
+                }
+                span{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: table;
+                    width: 250px;
+                    height: 30px;
+                    line-height: 1.1;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: opacity ease-in-out .3s;
+                    font-size: 14px;
+                    p{
+                        padding-top: 8px;
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: center;
+                        margin: 0 0 15px;
+                        overflow-wrap: break-word;
+                    }
+                }
+                &:hover span {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                
+                &:hover img {
+                    transform: scale(1.2);
+                    -webkit-filter: drop-shadow(0px 0px 1px #364775);
+                    filter:         drop-shadow(0px 0px 1px #364775); 
+                }
+            }
+        }
+    }
+    .reserva{
+        margin: 0px 20px 30px 20px;
+        .titulo{
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .menores{
+            span{padding-left: 8px;
+                font-size: 13px;
+            }
+        }
+    }
+    .reviews .google {
+        margin: 20px 60px;
+        .kPOGIE > a {
+            display: none !important;
+          }
+    }
+    .footer{
+        background: $fondoBlack;
+        margin-top: 80px;
+        .titulosFooter{
+            color: $textWhite;
+            font-size: 25px;
+        }
+        .logoFooter{
+            img{
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+        .contenLogos{
+            display: flex;
+            .logoRedes{
+                height: 20px;
+                width: 20px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    padding: 5px 0px;
+                    a{
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            height: 30px;
+                            width: 30px;
+                            margin-right: 15px;               
+                        }
+                        p{
+                            color: $textWhite;
+                            margin-bottom: 0px;
+                        }
+                        i{
+                            font-size: 25px;
+                            margin-right: 15px;                               
+                        }
+                    }
+                }
+            }
+            .linksPage{
+                li{
+                    padding: 0;
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+        }
+        .line{
+            border: 1px solid #ffffff;
+            width: 90%;
+        }
+        .copy{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+            .footerDis{
+                .pablo{
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-family: Pablo;
+                    margin-right: 30px;
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
+}
+.dFwLrb a{
+    display: none;
+}

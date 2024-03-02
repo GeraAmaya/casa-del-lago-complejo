@@ -1,0 +1,76 @@
+//Animacion de Entrada para Slogan
+@-webkit-keyframes slide-in-fwd-center {
+        0% {
+          -webkit-transform: translateZ(-1400px);
+                  transform: translateZ(-1400px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-fwd-center {
+        0% {
+          -webkit-transform: translateZ(-1400px);
+                  transform: translateZ(-1400px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+}
+
+//Animacion de Boton Home
+@keyframes anim{
+        0% {color:$fondoBody;} 
+       25% {color:$textBlack;}
+       50% {color:$fondoBody;}
+       75% {color:$textBlack;}
+      100% {color:$fondoBody;}
+}
+
+//Animacion de Entrada para WhatsApp
+ @-webkit-keyframes slide-in-blurred-br {
+  0% {
+    -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
+            transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+            transform: translate(0, 0) skew(0deg, 0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-br {
+  0% {
+    -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
+            transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+            transform: translate(0, 0) skew(0deg, 0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}

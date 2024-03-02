@@ -1,0 +1,6 @@
+//Animacion de Entrada para Slogan
+@for $entranceSlogan from 1 through 2{
+    .home .slogan .entranceSlogan:nth-child(#{$entranceSlogan}){
+        animation-delay: 0.5s * $entranceSlogan;
+    }
+}

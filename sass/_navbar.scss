@@ -1,0 +1,30 @@
+/*Barra de Navegacion*/
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: $fondoNab !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: $textWhite;
+}
+.navbar-nav {
+    --bs-nav-link-hover-color: $textWhite;
+    .nav-link{
+        color: $textWhite;
+    }
+    .sub a{
+        &:before{
+            content: '';
+            position: absolute;
+            background:$fondoWhite;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            transition: all 300ms ease-out;
+        }
+        &:hover:before{
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,65 @@
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    body .bienvenido .titulo, body .cabanas .titulo, body .reserva .titulo, body .zonaTuristica .titulo, body .reviews .titulo, body .contacto .titulo {
+        font-size: 4em;
+        margin-top: 10px;
+    }
+    body .bienvenido .parrafo, body .cabanas .parrafo, body .reserva .parrafo, body .zonaTuristica .parrafo, body .reviews .parrafo, body .contacto .parrafo {
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+    body{
+        .home{
+            .slogan{
+                span{
+                    font-size: 5em;
+                }
+            }
+        }
+        .floatHome{
+            right:19px;
+            bottom:65px;
+        }
+        .float{
+            width:40px;
+            height:40px;
+            bottom:15px;
+            right:15px;
+            i{
+                transform: translate(-50%, -23%);
+                font-size: 30px;
+            }
+            p{
+                transform: translate(-110%, 20%);
+            }
+        }
+        .zonaTuristica {
+            h3{
+                font-size: 2.5em;
+            }
+            .postales {
+                padding: 0 5px;
+                margin: 20px 0px 0px 0px;
+            }
+        }
+        .cabanas {
+            .galeriaCabanas {
+                padding: 0 5px;
+            }
+            h3{
+                font-size: 2.5em;
+            }
+        }
+        .reviews {
+            .titulo{
+                font-size: 3em;
+            }
+            .google {
+                margin: 20px !important;
+                .dmlKKH {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+}

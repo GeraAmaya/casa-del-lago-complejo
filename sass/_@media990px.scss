@@ -1,0 +1,21 @@
+@media only screen and (min-width: 320px) and (max-width: 991.5px) {
+
+    body{
+        .reserva{
+            iframe{
+                height: 620px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 890px) {
+    body{
+        .home{
+            .slogan{
+                span{
+                    font-size: 7em;
+                }
+            }
+        }
+    }
+}
