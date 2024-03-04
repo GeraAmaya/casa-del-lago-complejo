@@ -345,14 +345,15 @@ body{
                     height: 100%;
                     border: 4px solid #fff;
                 }
+                img:hover {
+            transform: scale(1.1); /* Puedes ajustar el valor según tus necesidades */
+        }
             } 
 
            
         }
 
-        img:hover {
-            transform: scale(1.1); /* Puedes ajustar el valor según tus necesidades */
-        }
+        
 
         h3{
             font-family: Mahalo;
