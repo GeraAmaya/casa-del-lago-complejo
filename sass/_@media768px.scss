@@ -9,16 +9,7 @@
     }
     body{
         .zonaTuristica {
-            .videos{
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                gap: 1rem;
-                iframe {
-                    width: 100%;
-                    margin: 0 10px;
-                    height: 350px;
-                }
-            } 
+        
             .postales {
                 .postal {
                     width: 95%;

@@ -54,7 +54,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: rgb(233, 193, 140);
 }
 body .lds-ring {
   display: inline-block;
