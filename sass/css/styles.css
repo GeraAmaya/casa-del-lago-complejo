@@ -26,7 +26,7 @@
 /*Barra de Navegacion*/
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, 0.4078431373) !important;
+  background-color: rgba(0, 0, 0, 0.685) !important;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
