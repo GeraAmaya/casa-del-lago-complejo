@@ -53,9 +53,7 @@
   width: 100%;
 }
 
-body {
-  background-color: rgb(233, 193, 140);
-}
+
 body .lds-ring {
   display: inline-block;
   position: relative;
@@ -545,6 +543,12 @@ body .footer .copy .footerDis .pablo {
 .dFwLrb a {
   display: none;
 }
+
+
+
+
+
+
 
 @-webkit-keyframes slide-in-fwd-center {
   0% {
