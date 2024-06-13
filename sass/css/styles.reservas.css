@@ -1,0 +1,211 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .logo {
+    margin-top: 20px;
+   width: 130px;/* Tamaño del logo en escritorio */
+  }
+  
+  .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .login-button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 15px 32px; /* Relleno */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Display inline-block */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón por encima */
+}
+  
+  /* Estilos para la sección de reservas */
+  
+  #reservation-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #reservation-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; /* Padding del formulario */
+  }
+  
+  #reservation-form label {
+    margin-top: 1rem;
+  }
+  
+  .guests-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .guests-group {
+    width: 45%;
+    margin-top: 15px;
+  }
+  
+  #price-info {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  #total-container {
+    margin-top: 1rem;
+  }
+  
+  #total-amount {
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para la sección de contactos */
+  
+  #contact-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem; /* Padding del contacto */
+  }
+  
+  #contact-section h2 {
+    text-align: center; /* Centrar texto "Contacto" */
+    margin-bottom: 1rem; /* Espacio inferior */
+  }
+  
+  #map-container,
+  #contact-icons {
+    width: 48%; /* Ancho del mapa e iconos */
+  }
+  
+  #map-container {
+    margin-right: 2%; /* Separación entre el mapa y los iconos */
+  }
+  
+  #map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  #contact-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center; /* Alinear íconos con texto */
+  }
+  
+  ul li a {
+    text-decoration: none; /* Quitar subrayado de enlaces */
+    color: #333; /* Color de texto para enlaces */
+    display: flex; /* Alinear ícono y texto */
+    align-items: center; /* Alinear ícono y texto */
+  }
+  
+  ul li a img {
+    max-width: 40px; /* Tamaño máximo de los íconos */
+    margin-right: 1rem; /* Espacio entre ícono y texto */
+  }
+  
+  ul li a p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Estilos responsive */
+  
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 1rem; /* Tamaño del logo en móvil */
+    }
+  
+    #reservation-section,
+    #contact-section {
+      flex-direction: column; /* Apilar secciones en móvil */
+      text-align: center; /* Centrar contenido en móvil */
+    }
+  
+    #reservation-section {
+      padding: 0.5rem; /* Padding reducido en formulario de reserva */
+    }
+  
+    .guests-container {
+      flex-direction: column; /* Apilar campos de huéspedes en móvil */
+    }
+  
+    .guests-group {
+      width: 100%;
+      margin-bottom: 1rem; /* Espacio entre grupos de huéspedes en móvil */
+    }
+  
+    #map-container,
+    #contact-icons {
+      width: 100%;
+      margin: 0; /* Eliminar margen para ajustar a móvil */
+    }
+  
+    #map-container {
+      margin-bottom: 1rem; /* Espacio inferior entre mapa y iconos en móvil */
+    }
+  }
+  
