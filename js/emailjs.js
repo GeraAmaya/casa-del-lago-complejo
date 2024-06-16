@@ -12,6 +12,7 @@ document.getElementById('form')
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 btn.value = 'Send Email';
+                document.getElementById('reservation-form').reset(); 
                 Swal.fire({
                     icon: 'success',
                     title: 'Enviado!',
