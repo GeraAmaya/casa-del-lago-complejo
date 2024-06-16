@@ -1,4 +1,4 @@
-import { auth, provider, signInWithPopup, onAuthStateChanged, signOut } from './firebase';
+import { auth, provider, signInWithPopup, onAuthStateChanged, signOut } from './Firebase/firebase';
 
 document.addEventListener('DOMContentLoaded', () => {
   const loginBtn = document.getElementById('login-btn');
