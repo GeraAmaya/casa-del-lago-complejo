@@ -26,6 +26,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!--CSS-->
   <link rel="stylesheet" href="sass/css/styles.css">
+  <!--EMAIL JS-->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('WpTf-OFAGz4G9oC4K')
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -274,24 +282,24 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <!--Formulario de Reserva-->
-              <form class="row formContact" action="https://formspree.io/f/mayrjzqb" method="POST">
+              <form class="row formContact" id="form">
                 <label class="mb-3 h3 text-sm-center text-md-center text-lg-center">Consulta por tu Reserva</label>
                 <!--Fecha de Ingreso-->
                 <div class="col-sm-12 col-lg-6 mb-3 text-start">
                   <label for="Ingreso" class="form-label">Fecha de Ingreso</label>
-                  <input type="text" class="form-control text-start" id="Ingreso" name="Fecha de Ingreso"
+                  <input type="text" class="form-control text-start" id="checkin_date" name="checkin_date"
                     placeholder="Formato Dia/Mes/Año">
                 </div>
                 <!--Fecha de Egreso-->
                 <div class="col-sm-12 col-lg-6 mb-3 text-start">
                   <label for="Egreso" class="form-label">Fecha de Egreso</label>
-                  <input type="text" class="form-control text-start" id="Egreso" name="Fecha de Egreso"
+                  <input type="text" class="form-control text-start" id="checkout_date" name="checkout_date"
                     placeholder="Formato Dia/Mes/Año">
                 </div>
                 <!--Cantidad Mayores-->
                 <div class="col-sm-12 col-lg-6 gl-3 mb-4 text-start">
                   <label for="Adultos" class="form-label">Adultos</label>
-                  <select class="form-select" id="Adultos" name="Cantidad de Adultos"
+                  <select class="form-select" name="adults" id="adults"
                     aria-label="Default select example">
                     <option selected>Cantidad de Adultos</option>
                     <option value="1">1</option>
@@ -305,7 +313,7 @@
                 <!--Cantidad Menores-->
                 <div class="col-sm-12 col-lg-6 gl-3 mb-4 text-start menores">
                   <label for="Menores" class="form-label">Menores<span>(bebes y niños)</span></label>
-                  <select class="form-select" id="Menores" name="Cantidad de Menores"
+                  <select class="form-select" name="children" id="children"
                     aria-label="Default select example">
                     <option selected>Cantidad de Menores</option>
                     <option value="1">1</option>
@@ -318,13 +326,18 @@
                 </div>
                 <!--Nombre-->
                 <div class="col-sm-12 col-lg-6 mb-3 text-start">
-                  <input type="text" class="form-control text-start" id="Nombre" name="Nombre"
+                  <input type="text" class="form-control text-start" name="name" id="name"
                     placeholder="Nombre y Apellido">
                 </div>
                 <!--Email-->
                 <div class="col-sm-12 col-lg-6 mb-3 text-start">
-                  <input type="email" class="form-control text-start" id="Email" name="Email" placeholder="Email">
+                  <input type="email" class="form-control text-start" name="email" id="email"placeholder="Email">
                 </div>
+                 <!--Tel-->
+                 <div class="col-sm-12 col-lg-6 mb-3 text-start">
+                  <input type="tel" class="form-control text-start" name="phone" id="phone" placeholder="Telefono">
+                </div>
+
                 <!--Terminos y Condiciones-->
                 <div class="col-sm-12 mt-3 text-start">
                   <div class="form-check form-switch form-check-reverse mb-3 text-end">
@@ -337,7 +350,7 @@
                 <!--Buttons-->
                 <div class="col-sm-12 mt-3 text-end ">
                   <button type="reset" class="btn btn-primary mb-2">Borrar</button>
-                  <button type="submit" class="btn btn-primary mb-2">Consultar Reserva</button>
+                  <button type="submit" class="btn btn-primary mb-2" id="button" value="Send Email">Consultar Reserva</button>
                 </div>
               </form>
 
@@ -477,6 +490,7 @@
     crossorigin="anonymous"></script>
   <script src="js/loader.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/emailjs.js"></script>
 </body>
 
 </html>
