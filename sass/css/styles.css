@@ -564,6 +564,36 @@ body .footer .copy .footerDis .pablo {
  
 }
 
+/*mobile carrousel*/
+@media (max-width: 767.98px) {
+  .carousel-item img {
+    width: 250px; /* Reducir el tamaño de la imagen */
+    height: 300px;
+    margin: 5px;
+    border-radius: 5px; /* Menor radio para dispositivos móviles */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Hacer los íconos de navegación más visibles en móviles */
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px; /* Reducir el ancho de los controles de navegación en móviles */
+  }
+
+  .carousel-caption {
+    font-size: 12px; /* Tamaño de fuente más pequeño para los textos en móviles */
+    padding: 10px; /* Espaciado interno */
+  }
+
+  .titulo {
+    font-size: 18px; /* Tamaño de fuente más pequeño para el título en móviles */
+    text-align: center; /* Centrar el título */
+  }
+}
 
 
 
