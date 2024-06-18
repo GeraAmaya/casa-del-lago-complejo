@@ -543,6 +543,27 @@ body .footer .copy .footerDis .pablo {
 .dFwLrb a {
   display: none;
 }
+/*carousel*/
+.carousel-item {
+  position: relative;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 600px;
+ 
+}
+
 
 
 
