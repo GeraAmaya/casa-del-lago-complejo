@@ -567,10 +567,9 @@ body .footer .copy .footerDis .pablo {
 /*mobile carrousel*/
 @media (max-width: 767.98px) {
   .carousel-item img {
-    width: 250px; /* Reducir el tamaño de la imagen */
-    height: 300px;
-    margin: 5px;
-    border-radius: 5px; /* Menor radio para dispositivos móviles */
+    max-height: 250px;
+    object-fit: cover;
+    margin: 0 3px;
   }
 
   .carousel-control-prev-icon,
