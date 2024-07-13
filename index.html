@@ -28,6 +28,10 @@
   <!--EMAIL JS-->
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!--Lightbox2-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 
 <script type="text/javascript">
   emailjs.init('WpTf-OFAGz4G9oC4K')
@@ -218,59 +222,66 @@
           </div>
         </div>
 
-        <!--Galeria Cabañas-->
-        <h3 class="titulo">Galeria de Imágenes</h3>
-        <!-- Imagenes Galeria-->
-        <div class="galeriaCabanas">
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_cocina_amplia-min.JPG" alt="Cocina">
-          </div>
-          
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_living-min.JPG" alt="Living">
-          </div>
+ <!--Galeria Cabañas-->
+<h3 class="titulo">Galeria de Imágenes</h3>
+<!-- Imagenes Galeria-->
+<div class="galeriaCabanas">
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_cocina_amplia-min.JPG" alt="Cocina" onclick="openLightbox(this)">
+  </div>
+  
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_living-min.JPG" alt="Living" onclick="openLightbox(this)">
+  </div>
 
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/cama_matrimonial_blanca-min.JPG" alt="Comedor">
-          </div>
-          <!---->
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_baño-min.JPG" alt="Comedor">
-          </div>
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/cama_matrimonial_blanca-min.JPG" alt="Comedor" onclick="openLightbox(this)">
+  </div>
 
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_desayunador_amplia-min.JPG" alt="Desayunador">
-          </div>
-          
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/cama_simple_aire-min.JPG" alt="Baño">
-          </div>
-          <!---->
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_escalera-min.JPG" alt="Pileta">
-          </div>
-          
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/cama_matrimonial_rosa-min.JPG" alt="Frente">
-          </div>
-          
-         
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_baño-min.JPG" alt="Baño" onclick="openLightbox(this)">
+  </div>
 
-          <!---->
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px; height: 250px;" src="assets/galeria/perchero-min.JPG" alt="Pileta">
-          </div>
-          
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_frente.jpeg" alt="Frente">
-          </div>
-          
-          <div class="fotoCabanas">
-            <img style="border-radius: 18px;" src="assets/galeria/foto_atras.jpeg" alt="Pileta">
-          </div>
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_desayunador_amplia-min.JPG" alt="Desayunador" onclick="openLightbox(this)">
+  </div>
+  
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/cama_simple_aire-min.JPG" alt="Cama simple" onclick="openLightbox(this)">
+  </div>
 
-         
-        </div>
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_escalera-min.JPG" alt="Escalera" onclick="openLightbox(this)">
+  </div>
+  
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/cama_matrimonial_rosa-min.JPG" alt="Cama matrimonial rosa" onclick="openLightbox(this)">
+  </div>
+
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px; height: 250px;" src="assets/galeria/perchero-min.JPG" alt="Perchero" onclick="openLightbox(this)">
+  </div>
+  
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_frente.jpeg" alt="Frente" onclick="openLightbox(this)">
+  </div>
+  
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px;" src="assets/galeria/foto_atras.jpeg" alt="Atras" onclick="openLightbox(this)">
+  </div>
+
+  <div class="fotoCabanas">
+    <img style="border-radius: 18px; height: 250px;" src="assets/galeria2/6.jpeg" alt="Pileta" onclick="openLightbox(this)">
+  </div>
+</div>
+
+<div id="myLightbox" class="lightbox" style="display: flex;">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightboxImg">
+  <div id="caption"></div>
+</div>
+
+
 
       </section>
 
