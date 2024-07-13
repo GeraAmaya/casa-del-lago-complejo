@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
     }
   });
   
-
+/*
   // Función para abrir el lightbox
 function openLightbox(img) {
   var lightbox = document.getElementById('myLightbox');
@@ -34,3 +34,4 @@ document.querySelectorAll('.fotoCabanas img').forEach(img => {
     openLightbox(this);
   };
 });
+*/
