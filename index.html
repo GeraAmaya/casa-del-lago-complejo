@@ -12,7 +12,7 @@
   <meta name="keywords"
     content="CABAÑAS, HOSPEDAJE, HOTEL, HOSTEL, BIALET MASSE, VILLA CARLOS PAZ, CORDOBA, LAGO SAN ROQUE, COSQUIN, VILLA DEL LAGO, FIESTAS, VACACIONES">
   <!--Titulo e Icono-->
-  <title>Bienvenidos| Casa del Lago- Cabaña</title>
+  <title>Bienvenidos | Casa del Lago- Cabaña</title>
   <link rel="icon" href="/assets//LOGO_NEGRO_PNG.png">
  <!--Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -51,7 +51,7 @@
       <!--Barra de Navegacion-->
       <nav class="navbar navbar-expand-lg bg-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="/assets/logo_blanco_png.png" alt="logo_blanco" width="100"></a>
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="/img/logo_blanco.png" alt="logo_blanco" width="100"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -73,9 +73,7 @@
               <li class="nav-item dropdown sub">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
-              <li class="nav-item dropdown sub">
-                <a class="nav-link" href="basesycondiciones.html" target="_blank">Bases del sorteo</a>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -103,8 +101,8 @@
     </a>
   </header>
   <!--Contenido de la Pagina-->
-  <main class="container-fluid">
-    <section class="bienvenido">
+  <main class="container-fluid" >
+    <section class="bienvenido" data-aos="fade-up"  >
       <h1 class="titulo">Bienvenidos a nuestra Cabaña!</h1>
       <p class="parrafo">Descubre la serenidad y el encanto de nuestra cabaña, un rincón perfecto para desconectar y
         conectarte con la naturaleza.
@@ -118,7 +116,7 @@
     </section>
     <hr>
     <!--La cabaña-->
-    <section class="zonaTuristica" id="zonaTuristica">
+    <section class="zonaTuristica" id="zonaTuristica" data-aos="fade-up">
       <h2 class="titulo">Nosotros</h2>
       <p class="parrafo">
 
@@ -205,7 +203,7 @@
           <div class="icono">
             <img src="assets/router-de-wifi.png" alt="WI-FI">
             <span>
-              <p>WI-FI</p>
+              <p>WI-FI StarLink</p>
             </span>
           </div>
           <div class="icono">
@@ -258,7 +256,7 @@
   </div>
   
   <div class="fotoCabanas">
-    <img style="border-radius: 18px;" src="assets/galeria/cama_matrimonial_rosa-min.JPG" alt="Cama matrimonial rosa" onclick="openLightbox(this)">
+    <img style="border-radius: 18px;" src="assets/fotos nuevas/cama.jpeg" alt="Cama matrimonial rosa" onclick="openLightbox(this)">
   </div>
   
   <div class="fotoCabanas">
@@ -282,7 +280,7 @@
   </div>
 
   <div class="fotoCabanas">
-    <img style="border-radius: 18px; height: 250px;" src="assets/fotos nuevas/DSC_0224.JPG" alt="Pileta" onclick="openLightbox(this)">
+    <img style="border-radius: 18px; height: 250px;" src="assets/fotos nuevas/pileta.jpeg" alt="Pileta" onclick="openLightbox(this)">
   </div>
 
 
@@ -595,9 +593,24 @@ fin chatboot-->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="js/loader.js"></script>
+ 
   <script src="js/script.js"></script>
   <script src="js/emailjs.js"></script>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // Inicializar AOS con algunas configuraciones opcionales
+  AOS.init({
+    duration: 1000,  // Duración de la animación en milisegundos
+    easing: 'ease-in-out', // Tipo de easing para las animaciones
+    once: true, // Aplica la animación solo una vez, no se repite
+    mirror: false, // Si se anima hacia atrás cuando el elemento sale de la vista
+  });
+</script>
+
+
 </body>
 
 </html>
