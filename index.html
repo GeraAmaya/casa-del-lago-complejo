@@ -30,12 +30,18 @@
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!--Lightbox2-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+  
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 
 <script type="text/javascript">
   emailjs.init('WpTf-OFAGz4G9oC4K')
 </script>
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -138,7 +144,7 @@
       <h3 id="cabana" class="titulo">Equipamientos y Sevicios</h3>
 
       <!--Cabañas-->
-      <section class="cabanas" >
+      <section class="cabanas" data-aos="fade-up" >
         
         <!--Iconos-->
         <div class="iconos">
@@ -223,7 +229,7 @@
  <!--Galeria Cabañas-->
 <h3 class="titulo">Galeria de Imágenes</h3>
 <!-- Imagenes Galeria-->
-<div class="galeriaCabanas">
+<div class="galeriaCabanas" data-aos="fade-up">
 
 
   <div class="fotoCabanas">
@@ -288,7 +294,7 @@
       </section>
 
    <!-- Carrousel -->
-<section class="cabanas">
+<section class="cabanas" data-aos="fade-up">
   <h2 class="titulo">Zona Turistica</h2>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -372,7 +378,7 @@
 
 
       <!--Reserva-->
-      <section class="reserva" id="reserva">
+      <section class="reserva" id="reserva" data-aos="fade-up">
         <h2 class="titulo">Reservas</h2>
         <div class="container">
           <div class="row">
@@ -467,7 +473,7 @@
 
 
       <!--Reviews-->
-      <section class="reviews">
+      <section class="reviews" data-aos="fade-up">
         <h2 class="titulo">Nuestros Clientes</h2>
         <div class="google">
           <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
@@ -598,17 +604,16 @@ fin chatboot-->
   <script src="js/emailjs.js"></script>
   
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-  // Inicializar AOS con algunas configuraciones opcionales
-  AOS.init({
-    duration: 1000,  // Duración de la animación en milisegundos
-    easing: 'ease-in-out', // Tipo de easing para las animaciones
-    once: true, // Aplica la animación solo una vez, no se repite
-    mirror: false, // Si se anima hacia atrás cuando el elemento sale de la vista
-  });
-</script>
+ <!-- script de AOS -->
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     duration: 1000,
+     easing: 'ease-in-out',
+     once: true,
+     mirror: false
+   });
+ </script>
 
 
 </body>
